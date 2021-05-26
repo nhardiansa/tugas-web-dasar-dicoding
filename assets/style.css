@@ -21,6 +21,7 @@ nav {
 nav svg {
   align-self: center;
   width: 2.25rem;
+  cursor: pointer;
 }
 
 .close-menu {
@@ -34,6 +35,35 @@ nav img {
 
 nav ul {
   display: none;
+}
+
+.dropdown {
+  margin-top: 3.5em;
+  position: fixed;
+
+  background-color: #333333;
+  width: 100%;
+  border-radius: 0 0 0.5em 0.5em;
+
+  display: none;
+}
+
+.dropdown li {
+  padding-block: 0.75em;
+  padding-left: 1em;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.unhide {
+  display: block;
 }
 
 .banner-desktop {
@@ -124,6 +154,10 @@ li {
   cursor: pointer;
 
   justify-self: center;
+}
+
+.books button:hover {
+  background-color: #414141;
 }
 
 aside {
