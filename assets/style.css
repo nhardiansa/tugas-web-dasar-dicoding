@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+
+  scroll-behavior: smooth;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  margin-inline: 1.25rem;
+  margin-inline: 1.25em;
 }
 
 nav {
@@ -196,4 +198,48 @@ footer {
 footer p {
   margin-top: 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .container {
+    padding-inline: 3.75em;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-left: 3em;
+    padding-top: 0.27em;
+  }
+
+  nav ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul a:hover {
+    color: rgb(206, 206, 206);
+  }
+
+  .banner-mobile {
+    display: none;
+  }
+
+  .banner-desktop {
+    display: block;
+    width: 100%;
+    padding-top: 2.5em;
+  }
 }
