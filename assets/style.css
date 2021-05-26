@@ -12,6 +12,8 @@
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   background: #333333;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
 }
@@ -38,16 +40,17 @@ nav ul {
   display: none;
 }
 .banner-mobile {
+  margin-top: 3.5rem;
   width: 100%;
   height: 30rem;
   object-fit: cover;
-
-  box-shadow: 0px 19px 35px -11px rgba(0, 0, 0, 0.33) inset;
 }
 
-.about {
+.about,
+.books,
+aside {
   margin-top: 2em;
-  margin-inline: 1.5rem;
+  padding-inline: 1.5rem;
 }
 
 h2 {
@@ -71,8 +74,92 @@ h2 {
 
 .about .word p {
   margin-bottom: 1.25em;
+  text-align: justify;
 }
 
 li {
   margin-bottom: 0.5em;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.books h2 {
+  margin-bottom: 1.5em;
+}
+
+.books img {
+  width: 60%;
+  align-self: center;
+  margin-bottom: 1.75em;
+}
+
+.buku-emas,
+.buku-kecil {
+  display: flex;
+  flex-direction: column;
+}
+
+.buku-kecil {
+  margin-top: 2.5em;
+}
+
+.books p {
+  text-align: justify;
+}
+
+.books .button {
+  display: flex;
+  justify-content: center;
+}
+.books button {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding-block: 1.15em;
+  padding-inline: 1.75em;
+  margin-top: 2em;
+  cursor: pointer;
+
+  justify-self: center;
+}
+
+aside {
+  background-color: #706c61;
+  color: #fff;
+  padding-block: 3em;
+}
+aside h2 {
+  margin-bottom: 1.5em;
+}
+
+aside .content {
+  display: flex;
+  flex-direction: column;
+}
+
+aside img {
+  width: 60%;
+  border-radius: 4em;
+  margin-bottom: 2em;
+  align-self: center;
+}
+
+aside p {
+  text-align: justify;
+}
+
+footer {
+  margin-top: 1.75em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 1em;
+  text-align: center;
 }
