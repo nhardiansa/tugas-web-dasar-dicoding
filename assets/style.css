@@ -81,7 +81,6 @@ nav ul {
 .about,
 .books,
 aside {
-  margin-top: 2em;
   padding-inline: 1.5rem;
 }
 
@@ -117,7 +116,7 @@ li {
 }
 
 .books {
-  padding-top: 4em;
+  padding-block: 4em;
   display: flex;
   flex-direction: column;
 }
