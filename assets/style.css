@@ -209,7 +209,10 @@ footer p {
     display: none;
   }
 
-  .container {
+  .container,
+  .about,
+  .books,
+  aside {
     padding-inline: 3.75em;
   }
 
@@ -241,5 +244,80 @@ footer p {
     display: block;
     width: 100%;
     padding-top: 2.5em;
+  }
+
+  .about {
+    padding-top: 4em;
+  }
+  .about article {
+    margin-top: 3.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about img {
+    /* margin-right: 10em; */
+    width: 30%;
+    align-items: center;
+  }
+
+  .about .word {
+    width: 50%;
+  }
+
+  .books {
+    padding-top: 4em;
+  }
+
+  .books h2 {
+    margin-bottom: 3.5em;
+  }
+
+  .buku-emas,
+  .buku-kecil {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buku-kecil {
+    flex-direction: row-reverse;
+  }
+
+  .buku-emas img,
+  .buku-kecil p {
+    width: 25%;
+    margin-right: 6em;
+  }
+
+  .buku-emas p,
+  .buku-kecil img {
+    width: 30%;
+  }
+
+  .books button {
+    font-size: 1rem;
+  }
+
+  aside .content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  aside h2 {
+    margin-bottom: 3em;
+  }
+
+  aside img {
+    width: 25%;
+    margin-right: 7em;
+  }
+
+  aside p {
+    width: 25%;
+  }
+
+  footer {
+    padding-bottom: 3em;
   }
 }
